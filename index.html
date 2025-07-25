@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milenio Fibra Óptica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      color: #003366;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header img {
+      height: 400px; /* LOGO AGRANDADO */
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #007bb5;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #006064;
+    }
+
+    .planes {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+      animation: fadeIn 2s ease;
+    }
+
+    .plan {
+      background-color: #ffffff;
+      border: 2px solid #00bcd4;
+      border-radius: 12px;
+      padding: 35px 25px;
+      width: 300px;
+      box-shadow: 0 6px 12px rgba(0, 123, 181, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .plan:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 123, 181, 0.25);
+    }
+
+    .plan h3 {
+      color: #004c99;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .plan p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      color: #006064;
+    }
+
+    .plan strong {
+      font-size: 1.3rem;
+      color: #00796b;
+    }
+
+    footer {
+      background-color: #007bb5;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #b2ebf2;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-btn a {
+      display: block;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-btn a:hover {
+      background-color: #1ebc5b;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      .planes {
+        flex-direction: column;
+        align-items: center;
+      }
+      header img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Milenio final.png" alt="Logo Milenio" />
+  </header>
+
+  <section class="hero">
+    <h2>Conectá tu mundo con la mejor fibra óptica</h2>
+    <p>Planes pensados para vos, desde lo más básico hasta ultra velocidad</p>
+  </section>
+
+  <section class="planes">
+    <div class="plan">
+      <h3>Plan 100 Megas</h3>
+      <p>Ideal para navegar y redes sociales</p>
+      <p><strong>$20.000</strong> / mes</p>
+    </div>
+    <div class="plan">
+      <h3>Plan 300 Megas</h3>
+      <p>Perfecto para streaming y videollamadas</p>
+      <p><strong>$21.000</strong> / mes</p>
+    </div>
+    <div class="plan">
+      <h3>Plan 600 Megas</h3>
+      <p>Para gamers, creadores y grandes familias</p>
+      <p><strong>$22.000</strong> / mes</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>📞 Contactanos: <a href="tel:+5491130839572">+54 9 11 3083-9572</a> | ✉ <a href="mailto:mileniointernetfibra@gmail.com">mileniointernetfibra@gmail.com</a></p>
+    <p>© 2025 Milenio Fibra Óptica</p>
+  </footer>
+
+  <div class="whatsapp-btn">
+    <a href="https://wa.me/5491130839572" target="_blank" title="Contactanos por WhatsApp">💬</a>
+  </div>
+
+</body>
+</html>
